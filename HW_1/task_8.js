@@ -14,11 +14,9 @@ var arr = [1,2,3,4];
 var element = 0;
 for (let i = 0; i < arr[i]; i++) {
     if((arr[i] % 2) == 0){
-
-        element = element + arr[i];
+        if(arr[i] > 3){
+            element = element + arr[i];
+        }
     }
 }
 console.log(element)
-
-
-// arr[i] > 3 ? element
