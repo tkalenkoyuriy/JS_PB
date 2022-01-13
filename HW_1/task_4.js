@@ -15,7 +15,7 @@
 // }
 // ```
 
-var a = 4;
+var a = 0;
 switch (a){
     case 0 :
         console.log( 0 );
