@@ -10,3 +10,6 @@
 // result = false;
 // }
 // ```
+
+var a=1, b=2, c=(5 + b < 4),
+    result = c ? console.log(c) : console.log(c);
