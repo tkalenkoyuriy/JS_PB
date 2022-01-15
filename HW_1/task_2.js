@@ -14,13 +14,8 @@
 // }
 // ```
 
-var message,
-    login_1 = 'Pitter',
-    login_2 = 'Owner',
-    login_3 = '';
-
-message = login_1 == 'Pitter' ? 'Hi' :
-    login_2 == 'Owner' ? 'Hello' :
-        login_3 =='' ? 'unknown' : '';
-
+var message, login = 'Owner'
+ message = login == 'Pitter' ? 'Hi' :
+     login == 'Owner' ? 'Hello' :
+         login =='' ? 'unknown' : '';
 console.log(message);
