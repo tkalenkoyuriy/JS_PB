@@ -9,5 +9,6 @@
 // }
 // ```
 
-var a=5, b=2, c=(a + b < 4),
-    result = c ? console.log(c) : console.log(c);
+var a=2, b=1, c=(a + b < 4),
+    result = c ? true : false
+console.log(result)
