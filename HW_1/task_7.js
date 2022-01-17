@@ -7,10 +7,11 @@
 //     - Не разрашается использовать специальные методы массивов.
 
 var arr = [1,2,3,4];
-var element = 0;
-for (let i = 0; i < arr.length; i++) {
+var sum = 0;
+var arr_lenght = arr.length;
+for (let i = 0; i < arr_lenght; i++) {
     if((arr[i] % 2) == 0){
-        element = element + arr[i];
+        sum = sum + arr[i];
     }
 }
-console.log(element)
+console.log(sum)

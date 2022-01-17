@@ -5,7 +5,8 @@
 // Если есть — выведите на экран `Есть!` и выйдите из цикла. Если нет - ничего делать не надо.
 
 var arr = [1, 2, 5, 9, 4, 13, 4, 10];
-for (let i = 0; i < arr.length; i++) {
+var arr_lenght = arr.length;
+for (let i = 0; i < arr_lenght; i++) {
     if(arr[i] == 4){
         console.log('Есть!')
         break

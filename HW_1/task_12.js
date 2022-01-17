@@ -5,8 +5,9 @@
 //     - Не разрашается использовать специальные методы массивов.
 
 var arr = [1,2,3,-5,-2,1,-4];
+var arr_lenght = arr.length;
 var sum = 0;
-for (let i = 0; i < arr.length; i++) {
+for (let i = 0; i < arr_lenght; i++) {
     if(arr[i] > 0){
         sum = sum + arr[i]
             }

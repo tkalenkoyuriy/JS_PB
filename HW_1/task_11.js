@@ -4,7 +4,8 @@
 //     - Не разрашается использовать специальные методы массивов.
 
 var arr = [2,5,9,15,0,4];
-for (let i = 0; i < arr.length; i++) {
+var arr_lenght = arr.length;
+for (let i = 0; i < arr_lenght; i++) {
     if(arr[i] > 3 && arr[i] < 10){
         console.log(arr[i])
     }
