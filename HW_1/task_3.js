@@ -5,7 +5,6 @@
 // case 'a':
 // console.log( 'a' );
 // break;
-//
 // case 'b':
 // case 'c':
 // case 'd':
@@ -18,13 +17,11 @@
 // }
 // ```
 
-var val = 't', a = 'a', b = 'b', c = 'c', d= 'd', e = 'e';
+var val = 'c', a = 'a', b = 'b', c = 'c', d= 'd', e = 'e';
 if (val == a) {
     console.log(a)
-}
-else{
-    if (val == b || val == c || val == d || val == e) {
+} else if (val == b || val == c || val == d || val == e) {
         console.log('others')
     } else
         console.log('unknown');
-}
+
