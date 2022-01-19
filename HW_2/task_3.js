@@ -11,7 +11,7 @@ function f(a,b,c){
         if (typeof item == 'number'){
             result = (a-b)/c;
         } else {
-            throw new Error('Error: all parameters type should be a Number')
+            throw new Error('all parameters type should be a Number')
         }
     }
     console.log(result)
