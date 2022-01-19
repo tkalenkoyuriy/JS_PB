@@ -11,8 +11,9 @@ function power(a){
         a = a*a*a;
         console.log(a);
     }else {
-        console.log('Error: parameter type is not a Number');
+        throw new Error('Error: parameter type is not a Number')
     }
     return a;
 }
-var result = power('Content');
+var result_1 = power(2);
+var result_2 = power('wertgv');
