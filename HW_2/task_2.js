@@ -14,7 +14,7 @@ function f(...tmp) {
         if (typeof item == 'number'){
             summ = summ + item;
         } else {
-            throw new Error('Error: all parameters type should be a Number')
+            throw new Error('all parameters type should be a Number')
         }
     }
     console.log(summ)
