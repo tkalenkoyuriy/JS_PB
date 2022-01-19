@@ -6,14 +6,14 @@
 // f(2); // 8
 // f('Content'); // Error: parameter type is not a Number
 // ```
-function power(a){
+function f(a){
     if(typeof a == 'number'){
         a = a*a*a;
         console.log(a);
     }else {
-        throw new Error('Error: parameter type is not a Number')
+        throw new Error('parameter type is not a Number')
     }
     return a;
 }
-var result_1 = power(2);
-var result_2 = power('wertgv');
+f(2); // 8
+f('Content'); // Error: parameter type is not a Number
