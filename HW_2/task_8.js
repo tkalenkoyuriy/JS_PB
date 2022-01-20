@@ -29,9 +29,8 @@ function f(arr) {
         throw new Error('Error: parameter type should be an array');
     }
 }
-
 f([1,2,3]);
-//f(1,2,3) // Error: parameter type should be an array
-//f('Content') // Error: parameter type should be an array
-//f([]) // Error: parameter can't be an empty
+f(1,2,3) // Error: parameter type should be an array
+f('Content') // Error: parameter type should be an array
+f([]) // Error: parameter can't be an empty
 
