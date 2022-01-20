@@ -14,7 +14,6 @@
 // arr.push(2);
 // console.log(arr[1]); // выведет число 2
 // ```
-
 var result;
 var arrEmpty = [];
 function isPositive(arr) {
