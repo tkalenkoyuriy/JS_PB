@@ -1,55 +1,40 @@
-// var result;
-// var arrEmpty = [];
-// function isPositive(){
-//     for(item of arguments){
-//         if (typeof item != 'number') {
-//             throw new Error('Тип параметра не является числом / Parameter type is not a Numbe')
-//         } else if (item > 0) {
-//             result = true;
-//             arrEmpty.push(item);
-//         } else {
-//             result = false;
-//         }
-//         // console.log(result);
-//     }
-//     console.log(arrEmpty);
+// // ####Задача 8
+// function solution(a, b) {
+//     //....
+//     return [];
 // }
-// isPositive(1, 2, -4, 3, -9, -1, 7);
+// console.log(solution([2, 4, 3], [5, 6, 4])); // [8, 0, 7]
+// console.log(solution([1, 4, 5], [4, 4, 2])); // [5, 8, 7]
+// console.log(solution([1, 1, 1], [])); // [1, 1, 1]
+// console.log(solution([], [9, 9, 9])); // [9, 9, 9]
+// console.log(solution([9,9,9], [9,9,9])); // [1, 9, 9, 8]
+// console.log(solution([], [])); // []
+// console.log(solution([], [0])); // [0]
+// console.log(solution([0], [0])); // [0]
+// console.log(solution([1,1,1,1,1,1,1,1], [1, 0])); // [1, 1, 1, 1, 1, 1, 2, 1]
+// console.log(solution([9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9],[1]));
+// // // [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
+function solution(arrA, arrB){
+    let a = arrA.join('');  // массив arrA преобразовываем в строку
+    let b = arrB.join('');  // массив arrB преобразовываем в строку
+    console.log(a)
+    console.log(b)
+    let c = ( Number(a) + Number(b)); //складываем преобразованные числа
+    console.log(c)
+    let arrC = Array.from(String(c), Number);
 
-// var j = 0;
-// function f(arr) {
-//     if (typeof arr[j] == 'number') {
-//         console.log(arr[j]);
-//         j++
-//         if (j < arr.length) {
-//             f(arr);
-//         } else {
-//             return
-//         }
-//     } else if (arr.length == 0){
-//         throw new Error('parameter can\'t be an empty');
-//     }else if (typeof arr[j] != arr['']) {
-//         throw new Error('Error: parameter type should be an array');
-//     }
-// }
-// f([1,2,3]);
-
-var result;
-var arrEmpty = [];
-function isPositive(arr) {
-    for (let i = 0; i < arr.length; i++) {
-    if (typeof arr[i] == 'number') {
-            if (arr[i] > 0) {
-                result = true;
-                arrEmpty.push(arr[i]);
-            } else {
-                result = false;
-            }
-        } else {
-        throw new Error('Тип параметра не является числом / Parameter type is not a Numbe')
-    }
-    }
-    console.log(arrEmpty);
+    console.log(arrC)
 }
-isPositive([1, 2, -4, 3, -9, -1, 7]);
+// solution([2, 4, 3, 0], [5, 7, 5]);
+// solution([2, 4, 3], [5, 6, 4]); // [8, 0, 7]
+// solution([1, 4, 5], [4, 4, 2]); // [5, 8, 7]
+// solution([1, 1, 1], []); // [1, 1, 1]
+// solution([], [9, 9, 9]); // [9, 9, 9]
+// solution([9,9,9], [9,9,9]); // [1, 9, 9, 8]
+// solution([], []); // []
+// solution([], [0]); // [0]
+// solution([0], [0]); // [0]
+solution([1, 1, 1, 1, 1, 1, 1, 1], [1, 0]); // [1, 1, 1, 1, 1, 1, 2, 1]
+//solution([9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9],[1]);
+// // // // [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]

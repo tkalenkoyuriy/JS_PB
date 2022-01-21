@@ -25,7 +25,7 @@ function f(arr) {
         }
     } else if (arr.length == 0){
         throw new Error('parameter can\'t be an empty');
-    }else if (typeof arr[j] != arr['']) {
+    }else if (typeof arr[j] != 'object') {
         throw new Error('Error: parameter type should be an array');
     }
 }
