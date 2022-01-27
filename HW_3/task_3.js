@@ -9,17 +9,25 @@
 // ```
 
 const arr = [1,2,3,4];
-var a=0, b= 0;
+var a=0;
 function every(arr, callback) {
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] <= 0) {
-            a++
+    if (typeof arr === 'object') {
+        if (typeof callback === 'function') {
+            for (let i = 0; i < arr.length; i++) {
+                if (arr[i] <= 0) {
+                    a++
+                }
+            }
+            callback(a)
+        }else{
+                throw new Error('Параметр callback не является функцией');
+            }
+        } else{
+            throw new Error('Параметр arr не является массивом');
         }
-    }
-    n = (a > 0 ) ? false : true
-    callback(n)
 }
 every(arr, function (n){
+    n = (a > 0 ) ? false : true
     console.log(n)
 })
 
