@@ -11,6 +11,11 @@
 function some(arr, callback) {
     if  (!Array.isArray(arr)) throw new Error ('Параметр arr не является массивом');
     if  ( typeof callback !== 'function') throw new Error ('Параметр callback не является функцией');
+    for (let i = 0; i < arr.length; i++) {
+
+    }
+
+
 
 }
 

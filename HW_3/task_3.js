@@ -9,10 +9,11 @@
 // ```
 const arr = [1,2,3,4,-6];
 var a=0;
+var arrLenght = arr.length;
 function every(arr, callback) {
     if  (!Array.isArray(arr)) throw new Error ('Параметр arr не является массивом');
     if  ( typeof callback !== 'function') throw new Error ('Параметр callback не является функцией');
-            for (let i = 0; i < arr.length; i++) {
+            for (let i = 0; i < arrLenght; i++) {
                 if (arr[i] <= 0) {
                     a++
                 }
