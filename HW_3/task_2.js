@@ -13,8 +13,8 @@ var k=0;
 var arrLenght = arr.length;
 
 function filter(arr, param) {
-    if (typeof arr === 'object') {
-        if (typeof param === 'function') {
+    if  (!Array.isArray(arr)) throw new Error ('Параметр arr не является массивом');
+    if  ( typeof param !== 'function') throw new Error ('Параметр callback не является функцией');
             for (let i = 0; i < arrLenght; i++) {
                 if (arr[i] > 0) {
                     positiveArr[i - k] = arr[i]
@@ -23,12 +23,6 @@ function filter(arr, param) {
                 }
             }
             param(positiveArr);
-        }else{
-            throw new Error('Параметр callback не является функцией');
-        }
-    } else{
-        throw new Error('Параметр arr не является массивом');
-    }
 }
 filter(arr, function (number) {
     console.log(number)
