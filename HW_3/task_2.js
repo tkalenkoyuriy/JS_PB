@@ -31,5 +31,5 @@ function filter(arr, param) {
     }
 }
 filter(arr, function (number) {
-    console.log(positiveArr)
+    console.log(number)
 })
