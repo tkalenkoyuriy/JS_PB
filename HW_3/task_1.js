@@ -9,20 +9,13 @@
 // ```
 
 function forEach(arr, callback) {
-    if (typeof arr === 'object'){
-        // console.log('Выполняется1')
-        if (typeof callback === 'function'){
-            // console.log('Выполняется2')
-            let arrLengh = arr.length
-            for (let i = 0; i < arrLengh; i++) {
-                callback(arr[i], i, arr);
-            }
-        }else{
-            throw new Error('Параметр callback не является функцией');
-        }
-    } else{
-        throw new Error('Параметр arr не является массивом');
+    if (!Array.isArray(arr)) throw new Error('Параметр arr не является массивом');
+    if (typeof callback !== 'function') throw new Error('Параметр callback не является функцией');
+    let arrLengh = arr.length
+    for (let i = 0; i < arrLengh; i++) {
+        callback(arr[i], i, arr);
     }
+
 }
 const arr = [1,2,3];
 forEach(arr, function (item, i, arr) {
