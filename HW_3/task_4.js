@@ -7,7 +7,7 @@
 // const arr = [1,2,3];
 // some(arr, function(item, i, arr) {});
 // ```
-var newArr = [];
+
 var b;
 function some(arr, callback) {
     if  (!Array.isArray(arr)) throw new Error ('Параметр arr не является массивом');
