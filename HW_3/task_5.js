@@ -13,4 +13,17 @@
 
 const arr = [1,2,3];
 const acc = 0;
-reduce(arr, function(acc, item, i, arr) {}, acc);
+var  abb = 0;
+
+function reduce(arr, callback, acc) {
+    for (let i = 0; i < arr.length; i++) {
+        abb = abb + arr[i]
+        callback(abb, i)
+        // console.log(abb)
+    }
+
+}
+reduce(arr, function(acc, item, i, arr) {
+    console.log(acc, item, i, arr)
+
+}, acc);

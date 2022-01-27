@@ -23,7 +23,7 @@ function some(arr, callback) {
         callback(b)
     }
 }
-function callback (item,i){
+function callback (item){
     console.log(item);
 }
 const arr = [1,3,4,-3,-2,6];
