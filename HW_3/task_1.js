@@ -18,10 +18,10 @@ function forEach(arr, callback) {
                 callback(arr[i], i, arr);
             }
         }else{
-            console.log('Параметр callback не является функцией')
+            throw new Error('Параметр callback не является функцией');
         }
     } else{
-        console.log('Параметр arr не является массивом')
+        throw new Error('Параметр arr не является массивом');
     }
 }
 const arr = [1,2,3];

@@ -24,10 +24,10 @@ function filter(arr, param) {
             }
             param(positiveArr);
         }else{
-            console.log('Параметр param не является функцией')
+            throw new Error('Параметр callback не является функцией');
         }
     } else{
-        console.log('Параметр arr не является массивом')
+        throw new Error('Параметр arr не является массивом');
     }
 }
 filter(arr, function (number) {
