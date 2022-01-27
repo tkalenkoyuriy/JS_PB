@@ -24,7 +24,7 @@ function filter(arr, param) {
             }
             param(positiveArr);
         }else{
-            console.log('Параметр callback не является функцией')
+            console.log('Параметр param не является функцией')
         }
     } else{
         console.log('Параметр arr не является массивом')
