@@ -5,8 +5,9 @@
 // f(9,3,2); // 3
 // f('s',9,3) // Error: all parameters type should be a Number
 // ```
-var result = 0;
+
 function f(a,b,c){
+    let result = 0;
     for(item of arguments){
         if (typeof item == 'number'){
             result = (a-b)/c;

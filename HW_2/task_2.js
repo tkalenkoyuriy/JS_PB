@@ -8,8 +8,9 @@
 // f(1,2,'s',4); // Error: all parameters type should be a Number
 // ```
 
-var summ = 0
+
 function f(...tmp) {
+    let summ = 0
     for (item of arguments) {
         if (typeof item == 'number'){
             summ = summ + item;
