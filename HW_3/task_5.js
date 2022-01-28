@@ -7,23 +7,23 @@
 //     ```javascript
 // const arr = [1,2,3];
 // const acc = 0;
-// reduce(arr, function(acc, item, i, arr) {}, acc);
+// reduce(arr, function(acc, item, i, arr) {
+// }, acc);
 // ```
 
-
 const arr = [1,2,3];
-const acc = 0;
+const acc = 0
 var  abb = 0;
 
 function reduce(arr, callback, acc) {
+    if(!Array.isArray(arr)) throw new Error ('Параметр arr не является массивом');
+    if( typeof callback !== 'function') throw new Error ('Параметр callback не является функцией');
+    if((typeof acc != 'string')&&(typeof acc != 'number')) throw new Error ('Параметр acc не является числом или строкой');
     for (let i = 0; i < arr.length; i++) {
         abb = abb + arr[i]
-        callback(abb, i)
-        // console.log(abb)
     }
-
+    callback(acc, abb)
 }
-reduce(arr, function(acc, item, i, arr) {
-    console.log(acc, item, i, arr)
-
+reduce(arr, function(acc, item) {
+    console.log(acc + item)
 }, acc);
