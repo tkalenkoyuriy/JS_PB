@@ -11,6 +11,7 @@
 // ```
 const arr = ['a','b','c','d',];
 // const arr = [1,2,3,4];
+arrLenght = arr.length
 arrEmpy = [];
 const acc = 0
 var  abb = 0;
@@ -18,10 +19,10 @@ function reduce(arr, callback, acc) {
     if(!Array.isArray(arr)) throw new Error ('Параметр arr не является массивом');
     if( typeof callback !== 'function') throw new Error ('Параметр callback не является функцией');
     if((typeof acc != 'string')&&(typeof acc != 'number')) throw new Error ('Параметр acc не является числом или строкой');
-    for (let i = 0; i < arr.length; i++) {
+    for (let i = 0; i < arrLenght; i++) {
         arrEmpy.unshift(arr[i])
     }
-    for (let i = 0; i < arr.length; i++) {
+    for (let i = 0; i < arrLenght; i++) {
         abb = abb + arrEmpy[i]
     }
     callback(acc, abb)

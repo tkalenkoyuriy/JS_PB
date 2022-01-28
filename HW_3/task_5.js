@@ -11,13 +11,14 @@
 // }, acc);
 // ```
 const arr = [1,2,3];
+arrLenght = arr.length
 const acc = 0
 var  abb = 0;
 function reduce(arr, callback, acc) {
     if(!Array.isArray(arr)) throw new Error ('Параметр arr не является массивом');
     if( typeof callback !== 'function') throw new Error ('Параметр callback не является функцией');
     if((typeof acc != 'string')&&(typeof acc != 'number')) throw new Error ('Параметр acc не является числом или строкой');
-    for (let i = 0; i < arr.length; i++) {
+    for (let i = 0; i < arrLenght; i++) {
         abb = abb + arr[i]
     }
     callback(acc, abb)
